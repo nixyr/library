@@ -195,7 +195,7 @@ function Kavo.CreateLib(kavName, themeList)
     local coverup = Instance.new("Frame")
     local title = Instance.new("TextLabel")
     local close = Instance.new("ImageButton")
-    local toggle = Instance.new("Button")
+    local tuggle = Instance.new("TextButton")
     local togglecorner = Instance.new("UICorner")
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
@@ -267,20 +267,20 @@ function Kavo.CreateLib(kavName, themeList)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
 
-   toggle.Name = "Toggle"
-   toggle.Parent = ScreenGui
-	toggle.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
-	toggle.BackgroundTransparency = 0
-	toggle.Position = UDim2.new(0, 30, -0, 30)
-	toggle.Size = UDim2.new(0, 40, 0, 40)
-	toggle.Font = Enum.Font.Gotham
-	toggle.Text = "Toggle"
-	toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-	toggle.TextSize = 14.000
-	toggle.BorderSizePixel = 0
-	toggle.Visible = false
-	toggle.AutoButtonColor = false
-	toggle.MouseButton1Click:Connect(function()
+   tuggle.Name = "Toggle"
+   tuggle.Parent = ScreenGui
+	tuggle.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+	tuggle.BackgroundTransparency = 0
+	tuggle.Position = UDim2.new(0, 30, -0, 30)
+	tuggle.Size = UDim2.new(0, 40, 0, 40)
+	tuggle.Font = Enum.Font.Gotham
+	tuggle.Text = "Toggle"
+	tuggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	tuggle.TextSize = 14.000
+	tuggle.BorderSizePixel = 0
+	tuggle.Visible = false
+	tuggle.AutoButtonColor = false
+	tuggle.MouseButton1Click:Connect(function()
        if minimized == false then
           Main:TweenSize(
           UDim2.new(0, 0, 0, 0),
@@ -304,7 +304,7 @@ function Kavo.CreateLib(kavName, themeList)
    
    ToggleCorner.CornerRadius = UDim.new(0, 5)
    ToggleCorner.Name = "TuglosCorner"
-   ToggleCorner.Parent = toggle
+   ToggleCorner.Parent = tuggle
 
     close.Name = "close"
     close.Parent = MainHeader
