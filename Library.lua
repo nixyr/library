@@ -195,11 +195,14 @@ function Kavo.CreateLib(kavName, themeList)
     local coverup = Instance.new("Frame")
     local title = Instance.new("TextLabel")
     local close = Instance.new("ImageButton")
+    local toggle = Instance.new("Button")
+    local togglecorner = Instance.new("UICorner")
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
     local coverup_2 = Instance.new("Frame")
     local tabFrames = Instance.new("Frame")
     local tabListing = Instance.new("UIListLayout")
+    local minimized = false
     local pages = Instance.new("Frame")
     local Pages = Instance.new("Folder")
     local infoContainer = Instance.new("Frame")
@@ -263,6 +266,45 @@ function Kavo.CreateLib(kavName, themeList)
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
+
+   toggle.Name = "Toggle"
+   toggle.Parent = ScreenGui
+	toggle.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+	toggle.BackgroundTransparency = 0
+	toggle.Position = UDim2.new(0, 30, -0, 30)
+	toggle.Size = UDim2.new(0, 40, 0, 40)
+	toggle.Font = Enum.Font.Gotham
+	toggle.Text = "Toggle"
+	toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+	toggle.TextSize = 14.000
+	toggle.BorderSizePixel = 0
+	toggle.Visible = false
+	toggle.AutoButtonColor = false
+	toggle.MouseButton1Click:Connect(function()
+       if minimized == false then
+          Main:TweenSize(
+          UDim2.new(0, 0, 0, 0),
+          Enum.EasingDirection.Out,
+          Enum.EasingStyle.Quart,
+          .6,
+          true
+          )
+          minimized = true
+          else
+          Main:TweenSize(
+          UDim2.new(0, 525, 0, 318),
+          Enum.EasingDirection.Out,
+          Enum.EasingStyle.Quart,
+          .6,
+          true
+          )
+          minimized = false
+        end
+   end)
+   
+   ToggleCorner.CornerRadius = UDim.new(0, 5)
+   ToggleCorner.Name = "TuglosCorner"
+   ToggleCorner.Parent = toggle
 
     close.Name = "close"
     close.Parent = MainHeader
