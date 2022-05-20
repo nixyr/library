@@ -42,10 +42,6 @@ function Kavo:DraggingEnabled(frame, parent)
 			end
 		end)
 	end
-	
-	function utility:DraggingEnded(callback)
-		table.insert(self.ended, callback)
-	end
 
 local themes = {
     SchemeColor = Color3.fromRGB(74, 99, 135),
