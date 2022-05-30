@@ -1267,7 +1267,7 @@ game.TweenService:Create(
     Size = UDim2.new(0, 365, 0, 36)}
 ):Play()
 isDropped1 = false
-for i, v in next, DropDownFrame:GetChildren() do
+for i, v in next, optionBtnFrame:GetChildren() do
 if v:IsA("TextButton") then
 v:Destroy()
 end
