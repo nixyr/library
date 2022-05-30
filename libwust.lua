@@ -321,12 +321,12 @@ tabBtn.MouseButton1Click:Connect(function()
   for i,v in next, v:GetChildren() do
   if v:IsA("TextButton") then
   game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-    TextColor3 = Color3.fromRGB(35, 59, 55)
+    TextColor3 = Color3.fromRGB(56, 56, 56)
   }):Play()
   end
   if v:IsA("ImageLabel") then
   game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-    ImageColor3 = Color3.fromRGB(35, 59, 55)
+    ImageColor3 = Color3.fromRGB(56, 56, 56)
   }):Play()
   end
   end
@@ -1082,7 +1082,7 @@ dropInfo = dropInfo or ""
 
 local isDropped1 = false
 local DropDownFrame = Instance.new("Frame")
-local dropdownFrame = Instance.new("ScrollingFrame")
+local dropdownFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local dropdownFrameMain = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -1127,7 +1127,7 @@ expand_more.BackgroundTransparency = 1.000
 expand_more.Position = UDim2.new(0.91900003, 0, 0.138999999, 0)
 expand_more.Size = UDim2.new(0, 25, 0, 25)
 expand_more.ZIndex = 2
-expand_more.Image = "rbxassetid://8530745436"
+expand_more.Image = "rbxassetid://3926305904"
 expand_more.ImageColor3 = Color3.fromRGB(255, 255, 255)
 expand_more.ImageRectOffset = Vector2.new(564, 284)
 expand_more.ImageRectSize = Vector2.new(36, 36)
@@ -1204,7 +1204,7 @@ optionBtn1.ZIndex = 2
 optionBtn1.AutoButtonColor = false
 optionBtn1.Font = Enum.Font.GothamSemibold
 optionBtn1.Text = "  "..v
-optionBtn1.TextColor3 = Color3.fromRGB(120, 200, 187)
+optionBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 optionBtn1.TextSize = 14.000
 optionBtn1.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1252,7 +1252,7 @@ optionBtn1.MouseEnter:Connect(function()
 optionBtn1.MouseLeave:Connect(function()
   game.TweenService:Create(optionBtn1, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
     BackgroundColor3 = Color3.fromRGB(21, 21, 21),
-    TextColor3 = Color3.fromRGB(120, 200, 187)
+    TextColor3 = Color3.fromRGB(255, 255, 255)
   }):Play()
   end)
 end
@@ -1295,7 +1295,7 @@ optionBtn1.ZIndex = 2
 optionBtn1.AutoButtonColor = false
 optionBtn1.Font = Enum.Font.GothamSemibold
 optionBtn1.Text = "  "..t
-optionBtn1.TextColor3 = Color3.fromRGB(120, 200, 187)
+optionBtn1.TextColor3 = Color3.fromRGB(255, 255, 255)
 optionBtn1.TextSize = 14.000
 optionBtn1.TextXAlignment = Enum.TextXAlignment.Left
 
@@ -1343,7 +1343,7 @@ optionBtn1.MouseEnter:Connect(function()
 optionBtn1.MouseLeave:Connect(function()
   game.TweenService:Create(optionBtn1, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
     BackgroundColor3 = Color3.fromRGB(21, 21, 21),
-    TextColor3 = Color3.fromRGB(120, 200, 187)
+    TextColor3 = Color3.fromRGB(255, 255, 255)
   }):Play()
   end)
 
