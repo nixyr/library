@@ -1275,7 +1275,16 @@ end
 end
 
 function drop:Add(t)
+local optionBtnFrame = Instance.new("Frame")
 local optionBtn1 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+optionBtnFrame.Name = "optionBtnFrame"
+optionBtnFrame.Parent = dropdownFrame
+optionBtnFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+optionBtnFrame.BackgroundTransparency = 1.000
+optionBtnFrame.BorderSizePixel = 0
+optionBtnFrame.Size = UDim2.new(0, 339, 0, 34)
 
 optionBtn1.Name = "optionBtn1"
 optionBtn1.Parent = optionBtnFrame
@@ -1284,7 +1293,7 @@ optionBtn1.Size = UDim2.new(0, 339, 0, 34)
 optionBtn1.ZIndex = 2
 optionBtn1.AutoButtonColor = false
 optionBtn1.Font = Enum.Font.GothamSemibold
-optionBtn1.Text = "  "..tostring(t)
+optionBtn1.Text = "  "..v
 optionBtn1.TextColor3 = Color3.fromRGB(120, 200, 187)
 optionBtn1.TextSize = 14.000
 optionBtn1.TextXAlignment = Enum.TextXAlignment.Left
@@ -1335,7 +1344,7 @@ optionBtn1.MouseLeave:Connect(function()
     BackgroundColor3 = Color3.fromRGB(21, 21, 21),
     TextColor3 = Color3.fromRGB(120, 200, 187)
   }):Play()
-end)
+  end)
 
 end
 return drop
