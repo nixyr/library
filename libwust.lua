@@ -1107,7 +1107,6 @@ dropdownFrame.Parent = DropDownFrame
 dropdownFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
 dropdownFrame.Size = UDim2.new(1, 0, 1, 0)
 dropdownFrame.ZIndex = 2
-dropdownFrame.ScrollingDirection = Enum.ScrollingDirection.Y
 
 UICorner.CornerRadius = UDim.new(0, 3)
 UICorner.Parent = dropdownFrame
