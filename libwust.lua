@@ -1260,11 +1260,11 @@ local drop = {}
 --dropp
 function drop:Clear()
 dropdownItem1.Text = tostring(dropInfo)
-TweenService:Create(
-  Dropdown,
+game.TweenService:Create(
+  DropDownFrame,
   TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
   {
-    Size = UDim2.new(0, 455, 0, 30)}
+    Size = UDim2.new(0, 365, 0, 36)}
 ):Play()
 isDropped1 = false
 for i, v in next, DropScroll:GetChildren() do
