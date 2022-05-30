@@ -1267,7 +1267,7 @@ game.TweenService:Create(
     Size = UDim2.new(0, 365, 0, 36)}
 ):Play()
 isDropped1 = false
-for i, v in next, DropScroll:GetChildren() do
+for i, v in next, DropDownFrame:GetChildren() do
 if v:IsA("TextButton") then
 v:Destroy()
 end
@@ -1275,7 +1275,7 @@ end
 end
 
 function drop:Add(t)
-local optionBtn2 = Instance.new("TextButton")
+local optionBtn1 = Instance.new("TextButton")
 
 optionBtn1.Name = "optionBtn1"
 optionBtn1.Parent = optionBtnFrame
