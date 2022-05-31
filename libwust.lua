@@ -1304,7 +1304,7 @@ UICorner_3.Parent = optionBtn1
 DropYSize = DropYSize + 40
 optionBtn1.MouseButton1Click:Connect(function()
   callback(v)
-  dropdownItem1.Text = tostring(t)
+  dropdownItem1.Text = t
   DropDownFrame:TweenSize(UDim2.new(0, 365, 0, 36), "In", "Quint", 0.10)
   wait()
   isDropped = false
