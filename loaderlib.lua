@@ -104,7 +104,9 @@ LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.Font = Enum.Font.GothamBold
 LoaderTitle.Position = UDim2.new(0, 17, 0, 50)
 
-function Nix:Button(btext,callback)
+local itemHandler = {}
+
+function itemHandler:Button(btext,callback)
 local Button = Instance.new("TextButton")
 local ButtonCorner = Instance.new("UICorner")
 
@@ -176,6 +178,6 @@ Button.MouseLeave:Connect(function()
   end)
 
 end
-
+return itemHandler
 end
 return Nix
