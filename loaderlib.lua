@@ -123,7 +123,7 @@ Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button.Text = btext or "textbtn"
 Button.TextSize = 10.000
 
-ButtonCorner.CornerRadius = UDim(0,5)
+ButtonCorner.CornerRadius = UDim.new(0,5)
 ButtonCorner.Name = "Corner"
 ButtonCorner.Parent = Button
 
