@@ -1,6 +1,6 @@
 local Nix = {}
 --lib
-function Nix:CreateWindow(loaderName)
+function Nix.CreateWindow(loaderName)
 local NixLoader = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Top = Instance.new("Frame")
