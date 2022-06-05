@@ -1,14 +1,14 @@
 local Nix = {}
 --lib
-function Nix.CreateWindow(loaderName)
+function Nix:CreateWindow(loaderName)
 local NixLoader = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Top = Instance.new("Frame")
 local MainCorner = Instance.new("UICorner")
 local TopCorner = Instance.new("UICorner")
-local LoaderTitle = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
 local CloseCorner = Instance.new("UICorner")
+local LoaderTitle = Instance.new("TextLabel")
 
 local TopBar = Top
 local UserInputService = game:GetService("UserInputService")
@@ -99,14 +99,12 @@ LoaderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.BackgroundTransparency = 1.000
 LoaderTitle.TextSize = 20.000
 LoaderTitle.Size = UDim2.new(0, 213, 0, 30)
-LoaderTitle.Text = loaderName
+LoaderTitle.Text = LoaderTitle
 LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.Font = Enum.Font.GothamBold
 LoaderTitle.Position = UDim2.new(0, 17, 0, 50)
 
-local itemHandler = {}
-
-function itemHandler:Button(btext,callback)
+function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
 local ButtonCorner = Instance.new("UICorner")
 
@@ -178,6 +176,5 @@ Button.MouseLeave:Connect(function()
   end)
 
 end
-return itemHandler
 end
 return Nix
