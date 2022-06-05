@@ -109,7 +109,6 @@ local Button = Instance.new("TextButton")
 local ButtonCorner = Instance.new("UICorner")
 
 --
-btext = btext or "TextButton"
 callback = callback or function() end
 --
 
@@ -120,7 +119,7 @@ Button.Position = UDim2.new(0, 20, 0, 100)
 Button.Size = UDim2.new(0, 230, 0, 30)
 Button.AutoButtonColor = false
 Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.Text = btext or "textbtn"
+Button.Text = btext
 Button.TextSize = 10.000
 
 ButtonCorner.CornerRadius = UDim.new(0,5)
