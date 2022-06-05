@@ -68,7 +68,7 @@ TopCorner.Parent = Top
 
 Close.Name = "Close"
 Close.Parent = Top
-Close.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Close.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
 Close.BackgroundTransparency = 0
 Close.Size = UDim2.new(0, 20, 0, 20)
 Close.Text = "X"
@@ -94,15 +94,15 @@ CloseCorner.Name = "Corner"
 CloseCorner.Parent = Close
 
 LoaderTitle.Name = "Title"
-LoaderTitle.Parent = Main
+LoaderTitle.Parent = Top
 LoaderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.BackgroundTransparency = 1.000
-LoaderTitle.TextSize = 20.000
-LoaderTitle.Size = UDim2.new(0, 213, 0, 30)
+LoaderTitle.TextSize = 12.000
+LoaderTitle.Size = UDim2.new(0, 120, 0, 30)
 LoaderTitle.Text = loaderName
 LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoaderTitle.Font = Enum.Font.GothamBold
-LoaderTitle.Position = UDim2.new(0, 17, 0, 50)
+LoaderTitle.Font = Enum.Font.SciFi
+LoaderTitle.Position = UDim2.new(0, 0, 0, 0)
 
 function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
@@ -114,15 +114,16 @@ callback = callback or function() end
 
 Button.Name = "Button"
 Button.Parent = Main
-Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-Button.Position = UDim2.new(0, 20, 0, 100)
+Button.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
+Button.Position = UDim2.new(0, 10, 0, 100)
+Button.Font = Enum.Font.Antique
 Button.Size = UDim2.new(0, 230, 0, 30)
 Button.AutoButtonColor = false
 Button.TextColor3 = Color3.fromRGB(255, 255, 255)
 Button.Text = btext
-Button.TextSize = 10.000
+Button.TextSize = 15.000
 
-ButtonCorner.CornerRadius = UDim.new(0,5)
+ButtonCorner.CornerRadius = UDim.new(0,2)
 ButtonCorner.Name = "Corner"
 ButtonCorner.Parent = Button
 
@@ -141,7 +142,7 @@ Button.MouseButton1Up:Connect(function()
   Button:TweenSize(UDim2.new(0, 230, 0, 30),
     "InOut", "Quint", 0.18, true)
   game.TweenService:Create(Button, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
-    BackgroundColor3 = Color3.fromRGB(50, 50, 50),
+    BackgroundColor3 = Color3.fromRGB(255, 90, 90),
     TextColor3 = Color3.fromRGB(255, 255, 255)
   }):Play()
   end)
@@ -162,15 +163,15 @@ Button.MouseButton1Down:Connect(function()
 
 Button.MouseEnter:Connect(function()
   game.TweenService:Create(Button, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
-    BackgroundColor3 = Color3.fromRGB(50, 50, 50),
+    BackgroundColor3 = Color3.fromRGB(255, 90, 90),
     TextColor3 = Color3.fromRGB(250,250,250)
   }):Play()
   end)
 
 Button.MouseLeave:Connect(function()
   game.TweenService:Create(Button, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
-    BackgroundColor3 = Color3.fromRGB(50, 50, 50),
-    TextColor3 = Color3.fromRGB(180, 180, 180)
+    BackgroundColor3 = Color3.fromRGB(255, 90, 90),
+    TextColor3 = Color3.fromRGB(255, 255, 255)
   }):Play()
   end)
 
