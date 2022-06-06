@@ -23,13 +23,13 @@ local Execution = Instance.new("TextLabel")
 --Locals
 local GameTitle = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 local IGN = game.Players.LocalPlayer.Name
-local ExecutorName = (identifyexecutor and table.concat({ identifyexecutor() }, " ") or "Unknown")
-local c=0
+local ExecutorName = (identifyexecutor and table.concat({identifyexecutor()}, " ") or "Unknown")
+local c = 0
 if isfile("kiwi.txt") then
 c = tonumber(readfile("kiwi.txt")) + 1
 writefile("kiwi.txt", tostring(c))
 else
-writefile("kiwi.txt", tostring(1))
+	writefile("kiwi.txt", tostring(1))
 c = 1
 end
 local TotalExecution = ("%s"):format(readfile("kiwi.txt"))
@@ -66,7 +66,7 @@ LoaderTitle = LoaderTitle or "Nixyr Loader V2"
 --
 
 --Start
-NixLoader.Name = loaderName
+NixLoader.Name = "Kiwi"
 NixLoader.Parent = game.CoreGui
 NixLoader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -282,4 +282,5 @@ Button.MouseLeave:Connect(function()
 
 end
 end
+
 return Nix
