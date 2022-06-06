@@ -7,6 +7,10 @@ local Top = Instance.new("Frame")
 local MainCorner = Instance.new("UICorner")
 local TopCorner = Instance.new("UICorner")
 local UserFrame = Instance.new("Frame")
+local UserIcon = Instance.new("ImageLabel")
+local InfoFrame = Instance.new("Frame")
+local UserCorner = Instance.new("UICorner")
+local InfoCorner = Instance.new("UICorner")
 local Close = Instance.new("ImageButton")
 local CloseCorner = Instance.new("UICorner")
 local LoaderTitle = Instance.new("TextLabel")
@@ -70,7 +74,7 @@ TopCorner.Parent = Top
 Close.Name = "Close"
 Close.Parent = Top
 Close.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
-Close.BackgroundTransparency = 0
+Close.BackgroundTransparency = 1
 Close.Size = UDim2.new(0, 20, 0, 20)
 Close.Image = "5969992570"
 Close.ImageColor3 = Color3.fromRGB(255, 255, 255)
@@ -98,13 +102,29 @@ LoaderTitle.Parent = Top
 LoaderTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.BackgroundTransparency = 1.000
 LoaderTitle.TextSize = 12.000
-LoaderTitle.Size = UDim2.new(0, 120, 0, 30)
+LoaderTitle.Size = UDim2.new(0, 130, 0, 30)
 LoaderTitle.Text = loaderName
 LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.Font = Enum.Font.SciFi
+LoaderTitle.TextXAlignment = Enum.TextXAlignment.Left
 LoaderTitle.Position = UDim2.new(0, 0, 0, 0)
 
+UserFrame.Name = "UserFrame"
+UserFrame.Parent = Main
+UserFrame.BackgroundColor3 = Color3.fromRGB(27, 45, 53)
+UserFrame.Position = UDim2.new(0, 10, 0, 40)
+UserFrame.Size = UDim2.new(0, 60, 0, 60)
 
+UserIcon.Name = "Icon"
+UserIcon.BackgroundColor3 = Color3.fromRGB(255,255,255)
+UserIcon.BackgroundTransparency = 1.000
+UserIcon.Parent = UserFrame
+UserIcon.Size = UDim2.new(0, 60, 0, 60)
+UserIcon.Image = "https://roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.userId.."&width=420&height=420=format=png"
+
+UserCorner.CornerRadius = UDim.new(0, 5)
+UserCorner.Name = "Corner"
+UserCorner.Parent = UserFrame
 
 function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
@@ -116,7 +136,7 @@ callback = callback or function() end
 
 Button.Name = "Button"
 Button.Parent = Main
-Button.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
+Button.BackgroundColor3 = Color3.fromRGB(27, 45, 53)
 Button.Position = UDim2.new(0, 10, 0, 110)
 Button.Font = Enum.Font.Antique
 Button.Size = UDim2.new(0, 230, 0, 30)
