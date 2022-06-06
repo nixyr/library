@@ -113,7 +113,7 @@ Close.MouseButton1Click:Connect(function()
 	end)
 
 CloseIcon.Name = "CloseIcon"
-CloseIcon.BackgroundColor3 = BackgroundColor3.fromRGB(255, 255, 255)
+CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloseIcon.BackgroundTransparency = 1.000
 CloseIcon.Parent = Close
 CloseIcon.Image = "5969992570"
