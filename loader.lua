@@ -157,7 +157,7 @@ Execution.Text = "⭐ "..TotalExecution
 Execution.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execution.Font = Enum.Font.SciFi
 Execution.TextXAlignment = Enum.TextXAlignment.Left
-Execution.Position = UDim2.new(0, 3, 0, -5)
+Execution.Position = UDim2.new(0, 3, 0, -6)
 
 UserCorner.CornerRadius = UDim.new(0, 5)
 UserCorner.Name = "Corner"
