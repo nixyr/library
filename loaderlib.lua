@@ -205,9 +205,9 @@ GameName.Font = Enum.Font.SciFi
 GameName.TextXAlignment = Enum.TextXAlignment.Left
 GameName.Position = UDim2.new(0, 10, 0, 30)
 
-InfoFrame.CornerRadius = UDim.new(0, 5)
-InfoFrame.Name = "Corner"
-InfoFrame.Parent = UserFrame
+InfoCorner.CornerRadius = UDim.new(0,5)
+InfoCorner.Name = "Corner"
+InfoCorner.Parent = InfoFrame
 
 function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
@@ -275,7 +275,7 @@ Button.MouseEnter:Connect(function()
 
 Button.MouseLeave:Connect(function()
 	game.TweenService:Create(Button, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
-		BackgroundColor3 = Color3.fromRGB(27, 45, 53),
+		 = Color3.fromRGB(27, 45, 53),
 		TextColor3 = Color3.fromRGB(255, 255, 255)
 	}):Play()
 	end)
