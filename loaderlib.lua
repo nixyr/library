@@ -116,7 +116,7 @@ CloseIcon.Name = "CloseIcon"
 CloseIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloseIcon.BackgroundTransparency = 1.000
 CloseIcon.Parent = Close
-CloseIcon.Image = "5969992570"
+CloseIcon.Image = "rbxasset://5969992570"
 
 CloseCorner.CornerRadius = UDim.new(0,5)
 CloseCorner.Name = "Corner"
@@ -132,7 +132,7 @@ LoaderTitle.Text = loaderName
 LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.Font = Enum.Font.SciFi
 LoaderTitle.TextXAlignment = Enum.TextXAlignment.Left
-LoaderTitle.Position = UDim2.new(0, 0, 0, 0)
+LoaderTitle.Position = UDim2.new(0, 10, 0, 0)
 
 UserFrame.Name = "UserFrame"
 UserFrame.Parent = Main
@@ -148,7 +148,7 @@ UserIcon.Size = UDim2.new(0, 60, 0, 60)
 UserIcon.Image = "https://roblox.com/headshot-thumbnail/image?userId="..game.Players.LocalPlayer.userId.."&width=420&height=420&format=png"
 
 Execution.Name = "Execution"
-Execution.Parent = InfoFrame
+Execution.Parent = UserIcon
 Execution.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Execution.BackgroundTransparency = 1.000
 Execution.TextSize = 8.000
@@ -168,6 +168,10 @@ InfoFrame.Parent = Main
 InfoFrame.BackgroundColor3 = Color3.fromRGB(27, 45, 53)
 InfoFrame.Position = UDim2.new(0, 80, 0, 40)
 InfoFrame.Size = UDim2.new(0, 160, 0, 60)
+
+InfoCorner.CornerRadius = UDim.new(0,5)
+InfoCorner.Name = "Corner"
+InfoCorner.Parent = InfoFrame
 
 Username.Name = "Username"
 Username.Parent = InfoFrame
@@ -204,10 +208,6 @@ GameName.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameName.Font = Enum.Font.SciFi
 GameName.TextXAlignment = Enum.TextXAlignment.Left
 GameName.Position = UDim2.new(0, 10, 0, 30)
-
-InfoCorner.CornerRadius = UDim.new(0,5)
-InfoCorner.Name = "Corner"
-InfoCorner.Parent = InfoFrame
 
 function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
