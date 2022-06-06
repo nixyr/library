@@ -275,7 +275,7 @@ Button.MouseEnter:Connect(function()
 
 Button.MouseLeave:Connect(function()
 	game.TweenService:Create(Button, TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.Out), {
-		 = Color3.fromRGB(27, 45, 53),
+		BackgroundColor3 = Color3.fromRGB(27, 45, 53),
 		TextColor3 = Color3.fromRGB(255, 255, 255)
 	}):Play()
 	end)
