@@ -6,7 +6,8 @@ local Main = Instance.new("Frame")
 local Top = Instance.new("Frame")
 local MainCorner = Instance.new("UICorner")
 local TopCorner = Instance.new("UICorner")
-local Close = Instance.new("TextButton")
+local UserFrame = Instance.new("Frame")
+local Close = Instance.new("ImageButton")
 local CloseCorner = Instance.new("UICorner")
 local LoaderTitle = Instance.new("TextLabel")
 
@@ -71,9 +72,8 @@ Close.Parent = Top
 Close.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
 Close.BackgroundTransparency = 0
 Close.Size = UDim2.new(0, 20, 0, 20)
-Close.Text = "X"
-Close.TextSize = 10.000
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.Image = "5969992570"
+Close.ImageColor = Color3.fromRGB(255, 255, 255)
 Close.Position = UDim2.new(0, 224, 0,5)
 Close.Visible = true
 Close.AutoButtonColor = false
@@ -104,6 +104,8 @@ LoaderTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoaderTitle.Font = Enum.Font.SciFi
 LoaderTitle.Position = UDim2.new(0, 0, 0, 0)
 
+
+
 function Nix:Button(btext,callback)
 local Button = Instance.new("TextButton")
 local ButtonCorner = Instance.new("UICorner")
@@ -115,7 +117,7 @@ callback = callback or function() end
 Button.Name = "Button"
 Button.Parent = Main
 Button.BackgroundColor3 = Color3.fromRGB(255, 90, 90)
-Button.Position = UDim2.new(0, 10, 0, 100)
+Button.Position = UDim2.new(0, 10, 0, 110)
 Button.Font = Enum.Font.Antique
 Button.Size = UDim2.new(0, 230, 0, 30)
 Button.AutoButtonColor = false
