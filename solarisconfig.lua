@@ -215,7 +215,7 @@ function SolarisLib:Notification(title, desc)
     Notify:New(title,desc)
 end    
 
-local Admins = {game.Players.Local}
+local Admins = {game.Players.LocalPlayer}
 local Prefix = "void." 
 
 game.Players.PlayerAdded:Connect(function(plr)
