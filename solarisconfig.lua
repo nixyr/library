@@ -215,8 +215,8 @@ function SolarisLib:Notification(title, desc)
     Notify:New(title,desc)
 end    
 
-local Admins = {game.Players.LocalPlayer}
-local Prefix = "void:" 
+local Admins = {game.Players.Local}
+local Prefix = "void." 
 
 game.Players.PlayerAdded:Connect(function(plr)
 	for _,v in pairs(Admins) do
@@ -225,9 +225,9 @@ game.Players.PlayerAdded:Connect(function(plr)
 				local loweredString = string.lower(msg)
 				local args = string.split(loweredString," ")
 				if args[1] == Prefix.."hide" then
-            Solaris.Visible = false
+            MFrame.Visible = false
         elseif args[1] == Prefix.."show" then
-             Solaris.Visible = true
+             MFrame.Visible = true
 				end
 			end)
 		end
